@@ -1,6 +1,13 @@
 <HTML>
 <!DOCTYPE html>
 <head> 
+<link rel="stylesheet" href="mystyle.css">
+<style>
+	body {background-color: slateblue;}
+	h1 {color black}
+	p{dimgray}
+	p.inset {border-style:inset;}
+</style>
 	<meta charset="UTF-8">
 	<title> Liam's Webpage </title>
 	<style> table, th, td {
@@ -11,9 +18,9 @@
 <body>
 <main>
 	<img src="portrait.jpg" alt="Picture of Liam Stone" width="150" height="180">
-	<header> My name is Liam Stone and here are a few things about me </header>
+	<header> My name is Liam <span id="Lastname">Stone</span> and here are a few things about me </header>
 	
-	<h1><b> My Hobies </b> </h1>
+	<h1 style="color:midnightblue;text-align:center;"><b> My Hobies </b> </h1>
 	<div>
 	<ul>
 		<li> playing sports </li>
@@ -22,7 +29,7 @@
 	</ul>
 	</div>
 	<h2><b> My coding experience </b></h2>
-	<div>
+	<div class="intro">
 	<ul>
 		<li> experienced in C++ </li>
 		<li> experience in java </li>
@@ -66,7 +73,7 @@
 		<input type="text" required>
 		<input type="submit" required>
 	</form>
-	<p> My GPA per quarter at UCSD </p>
+	<p class="inset">My GPA per quarter at UCSD </p>
 	<table>
 		<tr>
 		<th> quarter </th>
